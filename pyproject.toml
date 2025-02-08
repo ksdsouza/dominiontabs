@@ -6,7 +6,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "domdiv"
 dynamic = ["version"]
-dependencies = ["reportlab", "Pillow", "configargparse", "loguru"]
+dependencies = [
+    "reportlab",
+    "Pillow",
+    "configargparse",
+    "loguru",
+    "setuptools>=75.3.0",
+    "pyicu>=2.14",
+]
 description = "Divider Generation for the Dominion Card Game"
 keywords = ["boardgame", "cardgame", "dividers"]
 authors = [{ name = "Peter Gorniak", email = "sumpfork@mailmight.net" }]
